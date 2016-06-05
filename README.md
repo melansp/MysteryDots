@@ -14,22 +14,26 @@ The Launcher.cpp can be used to show non-coders what C++ source code looks like.
 
 ##INSTALLATION:
 Before building the MysteryDots game, you need to download the SFML source code and build it on the RPi.  But you'll need to install tools and dependencies before.
-TOOLS:
+
+Tools :
   - sudo apt-get install cmake
-sfml-window dependencies
+
+sfml-window dependencies :
   - sudo apt-get install libx11-dev libxcb1-dev libx11-xcb-dev libxcb-randr0-dev libxcb-image0-dev libgl1-mesa-dev libudev-dev -y
-sfml-graphics dependencies
+
+sfml-graphics dependencies :
   - sudo apt-get install libfreetype6-dev libjpeg-dev -y
-sfml-audio dependencies
+
+sfml-audio dependencies :
   - sudo apt-get install libopenal-dev libflac-dev libvorbis-dev -y
 
-Now download the latest stable release source code (from http://www.sfml-dev.org/download.php) and extract the zip file.
+Now, download the latest stable release source code (from http://www.sfml-dev.org/download.php) and extract the zip file.
 From a terminal window, navigate into the extracted SFML source code directory and type the following commands:
   - cmake ./
   - sudo make install
   - sudo ldconfig
 
-Now download the MysteryDots source code, navigate into the MysteryDots directory and type the following commands:
+Finally, download the MysteryDots source code, navigate into the MysteryDots directory and type the following commands:
   - make all
 
-You should now be 
+The executable should be ready in the bin directory.
