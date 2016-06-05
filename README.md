@@ -1,11 +1,35 @@
 # MysteryDots
-DESCRIPTION:
+##DESCRIPTION:
 A very simple dots made with the SFML library (http://www.sfml-dev.org/).
 
-PURPOSE:
+##PURPOSE:
 This game was created to demo the use of SFML on the Raspberry Pi.  Since the Raspbian OS added an experimental GL driver, games running on SFML can run on the RPi 2 or 3.  The code was designed to make it easy to change certain characteristics of the game.  When demonstrating the RPi to non-coders or beginners, this game illustrates and promotes how easy it is to make modification to code.
 
-DESCRIPTION:
-Player controls a little dots and needs to stay alive for the longest time possible.  NOTE: MysteryDots needs a gamepad controller play.
+##DESCRIPTION:
+Player controls a little dots and needs to stay alive for the longest time possible.  
+NOTE: MysteryDots needs a gamepad controller play.
 
-INSTALLATION:
+##CODE DETAILS:
+The Launcher.cpp can be used to show non-coders what C++ source code looks like.  It was made to be easy and intuitive for someone to make small configuration changes to the game.
+
+##INSTALLATION:
+Before building the MysteryDots game, you need to download the SFML source code and build it on the RPi.  But you'll need to install tools and dependencies before.
+TOOLS:
+  - sudo apt-get install cmake
+sfml-window dependencies
+  - sudo apt-get install libx11-dev libxcb1-dev libx11-xcb-dev libxcb-randr0-dev libxcb-image0-dev libgl1-mesa-dev libudev-dev -y
+sfml-graphics dependencies
+  - sudo apt-get install libfreetype6-dev libjpeg-dev -y
+sfml-audio dependencies
+  - sudo apt-get install libopenal-dev libflac-dev libvorbis-dev -y
+
+Now download the latest stable release source code (from http://www.sfml-dev.org/download.php) and extract the zip file.
+From a terminal window, navigate into the extracted SFML source code directory and type the following commands:
+  - cmake ./
+  - sudo make install
+  - sudo ldconfig
+
+Now download the MysteryDots source code, navigate into the MysteryDots directory and type the following commands:
+  - make all
+
+You should now be 
