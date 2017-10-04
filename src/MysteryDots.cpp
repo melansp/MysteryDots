@@ -27,18 +27,18 @@ MysteryDots::MysteryDots(std::string title)
 	txtTime.setPosition(10, 565);
 	txtBallCount.setPosition(250, 565);
 	txtSpeed.setPosition(550, 565);
-	txtTime.setColor(sf::Color::Blue);
-	txtBallCount.setColor(sf::Color::Blue);
-	txtSpeed.setColor(sf::Color::Blue);
+	txtTime.setFillColor(sf::Color::Blue);
+	txtBallCount.setFillColor(sf::Color::Blue);
+	txtSpeed.setFillColor(sf::Color::Blue);
 	txtTime.setStyle(sf::Text::Bold);
 	txtBallCount.setStyle(sf::Text::Bold);
 	txtSpeed.setStyle(sf::Text::Bold);
 
-	txtGameState.setColor(sf::Color(177, 177, 177));
+	txtGameState.setFillColor(sf::Color(177, 177, 177));
 	txtGameState.setPosition(200, 100);
 	txtGameState.setStyle(sf::Text::Bold);
 	
-	txtInstructions.setColor(sf::Color(177, 177, 177));
+	txtInstructions.setFillColor(sf::Color(177, 177, 177));
 	txtInstructions.setPosition(200,200);
 	txtInstructions.setStyle(sf::Text::Bold);
 
