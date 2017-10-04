@@ -19,7 +19,7 @@ Tools :
   - sudo apt-get install cmake
 
 sfml-window dependencies :
-  - sudo apt-get install libx11-dev libxcb1-dev libx11-xcb-dev libxcb-randr0-dev libxcb-image0-dev libgl1-mesa-dev libudev-dev -y
+  - sudo apt-get install libx11-dev libxcb1-dev libx11-xcb-dev libxrandr-dev libxcb-randr0-dev libxcb-image0-dev libgl1-mesa-dev libudev-dev -y
 
 sfml-graphics dependencies :
   - sudo apt-get install libfreetype6-dev libjpeg-dev -y
